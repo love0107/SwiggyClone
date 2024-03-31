@@ -1,0 +1,152 @@
+------------------ ============ class - 01 ============= ---------------------
+------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Vella</title>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+<script>
+    const heading=document.createElement("h1")
+    heading.innerHTML="Namaster React app"
+    const root=document.getElementById("root")
+    root.appendChild(heading)
+</script>
+</html>
+
+
+** react replace all the code inside the root tag and render whater ever you have passed in root.render 
+------------------ ============ class - 02 ============= ---------------------
+------------------------------------------------------------------------------
+
+npm - node package manager// doest not stand for this just for reference
+
+
+npm install -D parcel -- for dev dependency
+
+https://stackoverflow.com/questions/22343224/whats-the-difference-between-tilde-and-caret-in-package-json
+
+
+package lock json lock the version of production dependency
+
+npx - means execuite it
+npx parcel index.html
+
+parcel do ----->
+-- hot module replacement->> parcel will do the hot module reload
+-- file whater algorithms --->> in c++
+-- caching while development
+-- image optimization
+-- minify
+-- bundling
+------------------------------------
+  "start": "parcel index.html",
+
+  command for run-> npm run start or npm start
+  ------------
+
+  bable plugin transfrom remove console --> remove the console log
+
+
+  ________________________________________
+-- you can pass the key as props
+
+------------------------JSX( java script xmal)---------------------
+react components
+1. functional components-- new way to write code
+2. class based components -- old way to write code
+
+functional components-> Name start with capital letter(good pratice)
+
+const HeadingComponets = ()=> {
+return()
+}
+
+// arrow function ------>
+const HeaderComponents2 = () =>  (
+      <div>
+        <h1>Hello</h1>
+        <h2>2 heading</h2>
+      </div>
+    );
+
+react element vs react components
+
+react element can be use as
+
+const Title =(
+<h1 id ="title " key="h2">Hi this is lovlesh form namaste React</h1>
+);
+
+const HeaderComponents = () =>  (
+      <div>
+        {Title}// userd here       <<<---------
+        <h1>Hello</h1>
+        <h2>2 heading</h2>
+      </div>
+    );
+
+    ----------- components composition----
+    components inside components its called components composition
+
+------------------ ============ class - 02 ============= ---------------------
+------------------------------------------------------------------------------
+
+join in jsx==> name.jon(",")
+-- optional channing in react
+
+-- whater we are passing attribut it is called props
+
+const RestaurantCard = (props) => {
+  return (
+    <div className="card">
+      <img
+        src={
+          "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
+          props.restaurant.cloudinaryImageId
+        }
+        alt={props.restaurant.name}
+      />
+      <h2>{props.restaurant.name}</h2>
+      {/* <h3>{props.cuisines.join(", ")}</h3> */}
+      <h4>{props.restaurant.avgRating} star</h4>
+    </div>
+  );
+};
+
+-- spread operator
+-- map, filter , reduce==> for loop
+--    never user index as a key
+
+------------------------------------------------
+export default -- can export only one component.
+another way to export is:
+1. export by name
+export const Tile =()=>{}
+it can be import by `{Title}` // named import
+{Title, Header} --->> multipal header import
+import Header, {Title} ->> Header is default export and Title is named import
+
+import * as xyz from "./files/filename" now component can be used as xyz.componentName etc.
+
+
+
+Hooks--is a functions
+// userstate user for local state variables.
+which return  an array and 1 value is variables and 2 value is function is set the value 
+
+--------------------------
+what is optional chaning
+
+--------
+what is conditional rendering
+
+
+
+
+
