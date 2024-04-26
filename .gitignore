@@ -1,0 +1,17 @@
+# Ignore all node_modules directories
+node_modules/
+
+# Ignore all files ending with .lock
+*.lock
+
+# Ignore all yarn.lock files
+yarn.lock
+
+# Ignore all npm-debug.log files
+npm-debug.log
+
+# Ignore all pnpm-lock.yaml files
+pnpm-lock.yaml
+
+# Ignore all .pnp.js files
+.pnp.js
