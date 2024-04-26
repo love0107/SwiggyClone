@@ -15,3 +15,5 @@ pnpm-lock.yaml
 
 # Ignore all .pnp.js files
 .pnp.js
+# Ignore all .parcel-cache directories
+.parcel-cache/
