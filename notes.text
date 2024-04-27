@@ -146,6 +146,27 @@ what is optional chaning
 --------
 what is conditional rendering
 
+-----------------
+Formik package for make the form in react
+-------
+React Router:
+-------------
+1. npm i react-router-dom
+
+createBrowserRouter is a function form react-router-dom
+* router provider provides the route
+
+* react hooks name start with "use"
+* useRouteError user for showing the error while getting the route
+routing -> 
+1. client side routing 
+2. server side routing 
+
+** Link compenet help to make routing
+
+- all the childeren will go into the Outlet accoding to routing
+* useParams is a hooks use for getting the value from the route - its form react-router-dom
+
 
 
 

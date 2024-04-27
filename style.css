@@ -29,3 +29,9 @@
     display: flex;
     flex-wrap: wrap;
 }
+.simmer-card{
+    height: 200px;
+    width: 200px;
+    background-color: lightgray;
+    margin: 10px;
+}
